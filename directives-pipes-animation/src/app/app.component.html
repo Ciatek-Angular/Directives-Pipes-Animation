@@ -1,0 +1,20 @@
+
+<!-- <app-car></app-car> -->
+
+<!-- <app-company></app-company> -->
+
+<app-mypipes></app-mypipes>
+
+<!-- {{ email | customPipe }} -->
+
+<!-- pipe change any link to mail or phone -->
+<a [href]="email | customPipe:'mail'"  class="" style="margin-left: 10px; text-decoration: none;" >Ahmad Email</a>
+<a [href]="phone | customPipe:'phone'" class="" style="margin-left: 10px; text-decoration: none;" >Ahmad Phone</a>
+
+<br>
+
+<!-- pipe changes any number to currency($ or l.l.) -->
+{{ sales | currencyCustomPipe }}
+
+
+<app-animations></app-animations>
